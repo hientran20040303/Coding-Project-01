@@ -32,6 +32,7 @@ header {
     color: var(--orange);
 }
 
+/* Navigation menu*/
 nav ul {
     list-style: none;
     display: flex;
@@ -80,6 +81,7 @@ main {
     padding: 0 10% 60px 10%;
 }
 
+/* Feedback entries*/
 .search-container {
     display: flex;
     max-width: 600px;
@@ -114,6 +116,7 @@ textarea#comments {
     resize: vertical;
 }
 
+/* Submit button*/
 #update-btn {
     background: var(--orange);
     color: var(--black);

@@ -5,6 +5,7 @@ const feedbackDisplay = document.getElementById('feedback-display');
 const tooltip = document.getElementById('tooltip');
 const errorMessage = document.getElementById('error-message');
 
+// Character count
 commentsArea.addEventListener('input', (e) => {
     charCountSpan.textContent = e.target.value.length;
 });
@@ -18,6 +19,7 @@ feedbackForm.addEventListener('keydown', (e) => {
     }
 });
 
+// Event Delegation for Tooltips
 feedbackForm.addEventListener('mouseover', (e) => {
     const tip = e.target.getAttribute('data-tooltip');
     if (tip) {
@@ -39,6 +41,7 @@ feedbackForm.addEventListener('mouseout', (e) => {
     }
 });
 
+// Form Submission & Validation
 feedbackForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -53,6 +56,8 @@ feedbackForm.addEventListener('submit', (e) => {
 
     errorMessage.textContent = "";
 
+
+// Create Feedback Entry
   const card = document.createElement('div');
     card.className = 'feedback-card';
     card.innerHTML = `
