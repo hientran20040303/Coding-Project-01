@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BK Animation | User Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body-bg">
+
+    <header>
+        <div class="logo">BK ANIMATION</div>
+        <nav>
+            <ul>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">WORKS</a></li>
+                <li><a href="#">CAREERS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-container">
+        <section class="hero">
+            <h1 id="cta-headline">Stories that stay with you</h1>
+            <div class="vision-container">
+                <p>Submit your feedback and help us create meaningful stories that leave a lasting impression.</p>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <form id="feedback-form">
+                <div class="search-container">
+                    <input type="text" id="username" placeholder="NAME" data-tooltip="Enter your full name">
+                </div>
+
+                <div class="search-container">
+                    <input type="email" id="email" placeholder="EMAIL" data-tooltip="Enter a valid email address">
+                </div>
+
+                <div class="search-container comments-box">
+                    <textarea id="comments" placeholder="YOUR COMMENTS..." data-tooltip="Type your feedback here"></textarea>
+                </div>
+                <div class="char-info">Characters: <span id="char-count">0</span></div>
+
+                <button type="submit" id="update-btn">SUBMIT FEEDBACK</button>
+                <p id="error-message" class="error"></p>
+            </form>
+        </section>
+
+        <section class="services-container" id="feedback-display">
+        </section>
+    </main>
+
+    <div id="tooltip" class="hidden"></div>
+
+    <footer>
+        <p class="copyright">&copy; 2024 BK ANIMATION STUDIO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="cp_1.js"></script>
+</body>
+</html>
